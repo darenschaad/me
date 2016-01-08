@@ -1,20 +1,187 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <title>Daren Schaad's Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" media="screen">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+
+         <a class="navbar-brand text-muted" href="darenschaad.github.io/me">Home</a>
+         <div class="collapse navbar-collapse">
+
+           <ul class="nav navbar-nav navbar-right">
+             <li class="active"><a href="#">Home</a></li>
+             <li class="active"><a href="#">My Background</a></li>
+             <li class="dropdown active">
+                  <a data-toggle="dropdown" data-target="#">My Projects<b class="caret">
+                  </b></a>
+                  <ul class = "dropdown-menu">
+                    <li><a href="#">Dream Vacation</a></li>
+                    <li><a href="#">Animal Shelter</a></li>
+                    <li><a href="#">Cupcake Shop</a></li>
+                    <li class="divider"></li>
+                    <li><a href="https://www.amazon.com/">Links to all projects</a></li>
+                  </ul>
+                </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <!-- NAVBAR -->
+
+      <!--CAROUSEL  -->
+     <div id="myCarousel" class="carousel slide jumbotron">
+       <div class="container">
+         <ol class="carousel-indicators">
+           <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+           <li data-target="#myCarousel" data-slide-to="1"></li>
+           <li data-target="#myCarousel" data-slide-to="2"></li>
+           <li data-target="#myCarousel" data-slide-to="3"></li>
+         </ol>
+         <div class="carousel-inner">
+           <div class="item active">
+             <h1>Me &amp; My Dog!</h1>
+             <img class="lead img-size" src="https://scontent-lax3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/544994_436965812983565_402154975_n.jpg?oh=176942d5bce176562f59417e23f5777a&oe=573FC85D">
+             </p>
+             <p class="btn-group">
+               <a class="btn btn-default btn-lg" href="https://www.facebook.com/daren.schaad" target="_blank">My Facebook Profile</a>
+               <a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/daren-schaad-29466646" target="_blank">My Linkedin Profile</a>
+             </p>
+           </div>
+           <div class="item">
+             <h1>My Hometown!</h1>
+               <img class="lead img-size" src="https://i.ytimg.com/vi/GNHfrVyrl3A/maxresdefault.jpg">
+               <p>
+                 <a class="btn btn-default btn-lg" href="http://www.travelportland.com/" target="_blank">Travel Portland Site</a>
+                 <a class="btn btn-default btn-lg" href="https://en.wikipedia.org/wiki/Portland,_Oregon" target="_blank">Portland OR Info</a>
+               </p>
+           </div>
+           <div class="item">
+             <h1>I went to Oregon State University.</h1>
+               <img class="lead img-size" src="http://fa.oregonstate.edu/sites/fa.oregonstate.edu/files/feature-story/fa_colleague.jpg">
+               <p>
+                 <a class="btn btn-default btn-lg" href="http://oregonstate.edu/" target="_blank">OSU's Website</a>
+               </p>
+           </div>
+           <div class="item">
+             <h1>I currently obsessed with bowling!</h1>
+             <img class="lead img-size" src="http://blog.estately.com/assets/the-big-lebowski-3.jpg" alt="A photo from the movie The Big Lebowski" />
+             <p>
+               <a class="btn btn-default btn-lg" href="http://www.pba.com/">learn About The PBA</a>
+               <a class="btn btn-default btn-lg" href="http://www.popmythology.com/the-5-greatest-bowling-movies/">Top Five Bowling Movies</a>
+             </p>
+           </div>
+         </div>
+       </div>
+       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+         <span class="icon-prev"></span>
+       </a>
+       <a class="right carousel-control" href="#myCarousel" data-slide="next">
+         <span class="icon-next"></span>
+       </a>
+     </div>
+    <!--END CAROUSEL  -->
+    <!--MODAL  -->
+     <div class="modal fade" id="textModal">
+       <div class="modal-dialog">
+         <div class="modal-content">
+
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+             <h4 class="modal-title">We'll Text You the Link!</h4>
+           </div>
+           <div class="modal-body">
+             <form class="form-inline">
+               <div class="form-group">
+                 <label class="sr-only" for="mobilePhone">Mobile Phone</label>
+                 <input type="tel" class="form-control" id="mobilePhone" placeholder="Mobile Phone">
+               </div>
+               <div class="form-group">
+                 <select class="form-control">
+                   <option>iOS</option>
+                   <option>Android</option>
+                 </select>
+               </div>
+               <button type="submit" class="btn btn-primary" data-dismiss="modal">Send me the link</button>
+             </form>
+           </div>
+
+         </div>
+       </div>
+     </div>
+    <!--END MODAL  -->
+
+<!--MAIN CONTENT -->
     <div class="container">
-      <header class="page-header">
-        <ul class="nav nav-tabs pull-right">
+      <div class="row">
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-camera"></b>
+          <h2>View the local tourist attractions</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
 
-        </ul>
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-globe"></b>
+          <h2>Explore Fortaleza &amp; the local sites</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
 
-      </header>
-    </div>
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-eye-open"></b>
+          <h2>View photos in and around Fortaleza</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <hr>
 
+        <div class="row">
+          <div class="col-sm-6 hidden-xs">
+            <h3>Learn how to make this app</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-push-6">
+              <img class="img-responsive" src="fortaleza-brazil.jpg" alt="Pic of our dream vacation" />
+            </div>
+            <div class="col-sm-6 col-md-pull-6">
+              <p>Fly to Fortaleza, Brazil for only $879 roundtrip!</p>
+              <a href="#">Visit Fortaleza now!</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6">
+            <h3>About Epicodus</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+        </div>
+
+        <hr>
+        <div class="">
+          <p>&copy; 2016 Michael Smith &amp; Daren Schaad, Inc.</p>
+        </div>
+      </div>
+      <script src="http://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
